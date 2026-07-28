@@ -1,0 +1,28 @@
+#nav_bar{
+    background: linear-gradient(#182933,#496772,#BCD0D5);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#nav_bar a{
+    width: 220px;
+    padding: 16px 12px;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 12px;
+    background-color: #1d323e;
+    transition: 0.3s ease;
+}
+
+#nav_bar a:hover{
+    background-color: #121d24;
+}
+
+#nav_bar a.active{
+    background-color: #121d24;
+}
+

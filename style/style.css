@@ -1,0 +1,95 @@
+html{
+    background: black;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#A{
+    background-color: #182933;
+    color: aliceblue;
+    padding: 1%;
+    text-align: center;
+    font-size: 40px;
+}
+
+#B{
+    display: flex;
+    flex: 1;
+}
+
+#side_bar{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: linear-gradient(#182933,#496772,#182933);
+    width: 240px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#content{
+     background-color: #BCD0D5;
+     display: flex;
+    flex: 1;
+}
+
+#C{
+    background-color: #182933;
+    color: aliceblue;
+     padding: 1%;
+    text-align: center;
+    font-size: 40px;
+}
+
+#side_bar a{
+    width: 220px;
+    padding: 16px 12px;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 12px;
+    background-color: #1d323e;
+    transition: 0.3s ease;
+}
+#side_bar a:hover{
+    background-color: #121d24;
+}
+
+#side_bar a.active{
+    background-color: #121d24;
+}
+
+#img1{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title{
+    display: inline;
+    position: relative;
+    z-index: 10;
+}
+
+.home-title::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right,#496772,#7999A4,#BCD0D5);
+    animation: title-background 2s ease forwards;
+    z-index: -1;
+    border-radius: 10px 0px 0px 10px;
+}
+
+@keyframes title-background {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
