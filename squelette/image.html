@@ -25,24 +25,26 @@
 
             <h2>Redimensionner une image</h2>
 
-            <p>largeur</p>
-            <div id="sliderlargeur"></div>
+            <div class="slider-group">
+                <label for="sliderlargeur">largeur : <span id="valeurlargeur">300</span>px</label>
+                <input type="range" id="sliderlargeur" min="100" max="600" value="300">
+            </div>
 
-            <p>hauteur</p>
-            <div id="sliderhauteur"></div>
+            <div class="slider-group">
+                <label for="sliderhauteur">hauteur : <span id="valeurhauteur">300</span>px</label>
+                <input type="range" id="sliderhauteur" min="100" max="600" value="300">
+            </div>
 
             <br>
 
             <img id="image2" src="..\image\miady.jpg" alt="">
-                    
-            <script src="..\script\jquery.js"></script>
-            <script src="..\script\jquery-ui.js"></script> 
-            <script src="..\script\script.js"></script>
-            
+
         </div>
 
     </div>
 
     <div id="C">Auteur:</div>
+
+    <script src="../script/image.js"></script>
 </body>
 </html>

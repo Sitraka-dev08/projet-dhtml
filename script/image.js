@@ -1,25 +1,18 @@
-$(function () {
-    $("sliderlargeur").slider({
-        min: 100,
-        max: 600,
-        value: 300,
+const image2 = document.getElementById("image2");
+const sliderLargeur = document.getElementById("sliderlargeur");
+const sliderHauteur = document.getElementById("sliderhauteur");
+const valeurLargeur = document.getElementById("valeurlargeur");
+const valeurHauteur = document.getElementById("valeurhauteur");
 
-        slider: function (envent,ui){
-            $
-            ("#image").css("width",ui.value + "px");
-        }
-    });
+image2.style.width = sliderLargeur.value + "px";
+image2.style.height = sliderHauteur.value + "px";
+
+sliderLargeur.addEventListener("input", () => {
+    image2.style.width = sliderLargeur.value + "px";
+    valeurLargeur.textContent = sliderLargeur.value;
 });
 
-$(function () {
-    $("sliderhauteur").slider({
-        min: 100,
-        max: 600,
-        value: 300,
-
-        slider: function (envent,ui){
-            $
-            ("#image").css("height",ui.value + "px");
-        }
-    });
+sliderHauteur.addEventListener("input", () => {
+    image2.style.height = sliderHauteur.value + "px";
+    valeurHauteur.textContent = sliderHauteur.value;
 });

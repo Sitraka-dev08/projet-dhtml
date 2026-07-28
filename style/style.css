@@ -33,6 +33,7 @@ body{
 #content{
      background-color: #BCD0D5;
      display: flex;
+     flex-direction: column;
     flex: 1;
 }
 
@@ -92,4 +93,29 @@ body{
     to {
         width: 100%;
     }
+}
+
+.slider-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 400px;
+    margin-bottom: 16px;
+}
+
+.slider-group label{
+    font-weight: bold;
+    color: #182933;
+}
+
+.slider-group input[type="range"]{
+    width: 100%;
+    accent-color: #496772;
+}
+
+#image2{
+    display: block;
+    object-fit: fill;
+    border: 2px solid #182933;
+    border-radius: 8px;
 }
